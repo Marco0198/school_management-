@@ -5,7 +5,7 @@ Test factory for domain name
 @author: Anicka Schouw 217284183
 June 2022
  */
-/*
+
 import ac.za.cput.domain.name.Name;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -50,4 +50,4 @@ public class NameFactoryTest {
         assertTrue(exception.getMessage().contains("middleName"));
     }
 
-}*/
+}
