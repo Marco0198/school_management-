@@ -29,10 +29,7 @@ public class CityServiceImpl implements ICityService {
     public Optional<City> read(String id) {
         return this.repository.findById(id);
     }
-    @Override
-    public City update(City city) {
-        return save(city);
-    }
+
     @Override
     public void delete(City c) {
         repository.delete(c);
