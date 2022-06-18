@@ -22,12 +22,12 @@ public class EmployeeController {
     private EmployeeServiceImpl service;
     @GetMapping("employee/{email}")
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<Employee> findNameByEmail (@PathVariable String email){
+    public String findNameByEmail (@PathVariable String email){
         log.info("read request :{}",email);
         Employee employee =service.findNameByEmail(email).orElseThrow(()-> {
             return new ResponseStatusException(HttpStatus.NOT_FOUND);
         });
-        return ResponseEntity.ok(employee);
+        return employee.getEmail();
     }
     @GetMapping("/")
     public String index() {
