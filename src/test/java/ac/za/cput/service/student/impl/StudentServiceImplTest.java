@@ -1,18 +1,17 @@
 package ac.za.cput.service.student.impl;
-
-import ac.za.cput.domain.employee.Employee;
 import ac.za.cput.domain.name.Name;
 import ac.za.cput.domain.student.Student;
-import ac.za.cput.factory.employee.EmployeeFactory;
 import ac.za.cput.factory.student.StudentFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import java.util.Optional;
 import java.util.Set;
-
+/*
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date:  2022
+*/
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class StudentServiceImplTest {
@@ -22,7 +21,7 @@ class StudentServiceImplTest {
     @BeforeEach
     void setUp() {
         this.name= new Name("marco","mulonday","tshimanga");
-        this.student1= StudentFactory.createStudent("44","thh",this.name);
+        this.student1= StudentFactory.createStudent("44","thh@gmail.com",this.name);
     }
 
     @Test
@@ -41,9 +40,6 @@ class StudentServiceImplTest {
         assertAll(()->assertTrue(read.isPresent()));
     }
 
-    @Test
-    void update() {
-    }
 
     @Test
     void delete() {

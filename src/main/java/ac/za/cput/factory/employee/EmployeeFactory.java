@@ -1,9 +1,11 @@
 package ac.za.cput.factory.employee;
-
 import ac.za.cput.domain.employee.Employee;
 import ac.za.cput.domain.name.Name;
 import ac.za.cput.helper.StringHelper;
-
+/*
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date:  2022
+*/
 public class EmployeeFactory {
     public static Employee createEmployee(String staffId, String email, Name name) {
         StringHelper.checkStringParam("staffId", staffId);
