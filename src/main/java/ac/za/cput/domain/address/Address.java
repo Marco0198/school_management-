@@ -10,16 +10,12 @@ import ac.za.cput.domain.city.City;
 
 import javax.persistence.Embeddable;
 import javax.persistence.Embedded;
-import javax.validation.constraints.NotNull;
-import java.io.Serializable;
 
 @Embeddable
-public class Address implements Serializable {
+public class Address  {
 
     private String unitNumber;
-
     private String complexName, streetNumber, streetName;
-
     private int postalCode;
 
     protected Address() {}
