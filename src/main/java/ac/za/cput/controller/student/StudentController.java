@@ -1,5 +1,4 @@
 package ac.za.cput.controller.student;
-
 import ac.za.cput.domain.student.Student;
 import ac.za.cput.service.student.StudentService;
 import lombok.extern.slf4j.Slf4j;
@@ -11,7 +10,10 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Optional;
 import java.util.Set;
-
+/*
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date:  2022
+*/
 @RestController
 @Slf4j
 

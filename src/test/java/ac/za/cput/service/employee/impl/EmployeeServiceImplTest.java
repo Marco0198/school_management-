@@ -1,5 +1,4 @@
 package ac.za.cput.service.employee.impl;
-
 import ac.za.cput.domain.employee.Employee;
 import ac.za.cput.domain.name.Name;
 import ac.za.cput.factory.employee.EmployeeFactory;
@@ -7,11 +6,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import java.util.Optional;
 import java.util.Set;
-
 import static org.junit.jupiter.api.Assertions.*;
+/*
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date:  2022
+*/
 @SpringBootTest
 class EmployeeServiceImplTest {
       @Autowired public EmployeeServiceImpl service;

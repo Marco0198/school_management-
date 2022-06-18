@@ -5,8 +5,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-/* Customer.java
- Entity for the Customer
+/*
  Author: Marco Mulondayi Tshimanga (219049505)
  Date:  2022
 */

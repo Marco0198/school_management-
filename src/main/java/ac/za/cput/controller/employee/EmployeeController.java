@@ -1,7 +1,5 @@
 package ac.za.cput.controller.employee;
-
 import ac.za.cput.domain.employee.Employee;
-import ac.za.cput.domain.student.Student;
 import ac.za.cput.service.employee.impl.EmployeeServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +10,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
-
 import java.util.Set;
-
+/*
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date:  2022
+*/
 @RestController
 @Slf4j
 public class EmployeeController {
