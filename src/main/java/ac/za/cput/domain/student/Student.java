@@ -1,7 +1,10 @@
 package ac.za.cput.domain.student;
 import ac.za.cput.domain.name.Name;
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 /* Customer.java
  Entity for the Customer
  Author: Marco Mulondayi Tshimanga (219049505)
@@ -13,7 +16,10 @@ import javax.validation.constraints.NotNull;
 public class Student {
     @Id
     @NotNull private String studentId;
-    @NotNull private String  email;
+    @NotNull
+    @Email(regexp = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}", flags = Pattern.Flag.CASE_INSENSITIVE)
+    @NotEmpty(message = "Email cannot be empty")
+    private String  email;
     @Embedded
     private Name name;
     public Name getName() {return name;

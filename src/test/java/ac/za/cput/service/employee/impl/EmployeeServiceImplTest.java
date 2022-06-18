@@ -20,7 +20,7 @@ class EmployeeServiceImplTest {
     @BeforeEach
     void setUp() {
         this.name= new Name("marco","mulonday","tshimanga");
-        this.employee1= EmployeeFactory.createEmployee("44","thh",this.name);
+        this.employee1= EmployeeFactory.createEmployee("44","thh@gmail.com",this.name);
     }
 
     @Test
@@ -39,9 +39,7 @@ class EmployeeServiceImplTest {
          assertAll(()->assertTrue(read.isPresent()));
     }
 
-    @Test
-    void update() {
-    }
+
 
     @Test
     void delete() {

@@ -1,7 +1,4 @@
 package ac.za.cput.service.employee.impl;
-
-
-
 import ac.za.cput.domain.employee.Employee;
 import ac.za.cput.repository.employee.EmployeeRepository;
 import ac.za.cput.service.employee.IEmployeeService;
@@ -26,12 +23,15 @@ public class EmployeeServiceImpl implements IEmployeeService {
     @Override
     public Optional<Employee> read(String s) {return this.repository.findById(s);}
 
-    @Override
-    public Employee update(Employee employee) {return save(employee);  }
+
     @Override
     public void delete(Employee s) {
         repository.delete(s);
 
+    }
+
+    public Optional <Employee> findNameByEmail(String email) {
+     return repository.findNameByEmail(email);
     }
 
     @Override

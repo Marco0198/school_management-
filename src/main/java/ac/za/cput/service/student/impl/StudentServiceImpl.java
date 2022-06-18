@@ -26,10 +26,7 @@ import java.util.stream.Collectors;
  public Optional<Student> read(String studentId) {
      return this.repository.findById(studentId);
  }
- @Override
- public Student update(Student student) {
-     return save(student);
- }
+
  @Override
  public void delete(Student s) {repository.delete(s);}
     @Override
