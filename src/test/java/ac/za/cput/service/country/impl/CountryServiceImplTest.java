@@ -4,10 +4,8 @@ import ac.za.cput.SchoolManagementApplication;
 import ac.za.cput.domain.country.Country;
 import ac.za.cput.factory.country.CountryFactory;
 import ac.za.cput.service.country.CountryService;
-import org.junit.FixMethodOrder;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -23,7 +21,6 @@ Student Number: 219168296
 CountryServiceImpl
 
  */
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @SpringBootTest(classes= SchoolManagementApplication.class)
 class CountryServiceImplTest {
     private Country country, saved;
