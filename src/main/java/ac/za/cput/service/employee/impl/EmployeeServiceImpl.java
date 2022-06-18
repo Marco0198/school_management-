@@ -1,16 +1,16 @@
 package ac.za.cput.service.employee.impl;
-
-
-
 import ac.za.cput.domain.employee.Employee;
 import ac.za.cput.repository.employee.EmployeeRepository;
 import ac.za.cput.service.employee.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
+/*
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date:  2022
+*/
 @Service
 public class EmployeeServiceImpl implements IEmployeeService {
     private final EmployeeRepository repository;
@@ -26,12 +26,14 @@ public class EmployeeServiceImpl implements IEmployeeService {
     @Override
     public Optional<Employee> read(String s) {return this.repository.findById(s);}
 
-    @Override
-    public Employee update(Employee employee) {return save(employee);  }
+
     @Override
     public void delete(Employee s) {
         repository.delete(s);
+    }
 
+    public Optional <Employee> findNameByEmail(String email) {
+     return repository.findNameByEmail(email);
     }
 
     @Override
