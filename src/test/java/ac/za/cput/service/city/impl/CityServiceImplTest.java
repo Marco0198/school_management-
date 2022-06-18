@@ -45,10 +45,6 @@ class CityServiceImplTest {
     }
 
     @Test
-    void update() {
-    }
-
-    @Test
     void delete() {
         this.service.delete(this.city1);
         Set<City> cityList = this.service.findAll();
