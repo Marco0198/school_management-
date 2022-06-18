@@ -8,8 +8,10 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 /*
- Author: Marco Mulondayi Tshimanga (219049505)
- Date:  2022
+StudentServiceImpl.java
+Service implementation for domain Student
+@author: Anicka Schouw 217284183
+June 2022
 */
 @Service
  public class StudentServiceImpl implements StudentService {

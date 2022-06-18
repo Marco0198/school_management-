@@ -11,8 +11,10 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.Optional;
 import java.util.Set;
 /*
- Author: Marco Mulondayi Tshimanga (219049505)
- Date:  2022
+StudentController.java
+Controller for Domain Student
+@author: Anicka Schouw 217284183
+June 2022
 */
 @RestController
 @Slf4j
