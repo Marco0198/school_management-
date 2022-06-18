@@ -1,4 +1,4 @@
-package ac.za.cput.domain.studentAddress;
+package ac.za.cput.domain.StudentAddress;
 
 import javax.persistence.Embeddable;
 
