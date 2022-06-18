@@ -1,18 +1,21 @@
 package ac.za.cput.domain.employee;
 import ac.za.cput.domain.name.Name;
-import javax.persistence.Column;
-import javax.persistence.Embedded;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 /* Customer.java
  Entity for the Customer
  Author: Marco Mulondayi Tshimanga (219049505)
  Date:  2022
 */
+@Entity
+@Table(name="employee")
 public class Employee {
     @Id
     @NotNull
+    @Column(name="staff_id")
     private String staffId;
+    @Column(name="email")
     @NotNull private String  email;
     @Embedded
     private Name name;
@@ -43,7 +46,6 @@ public class Employee {
         private String staffId;
         @Embedded
         private Name name;
-
         private String  email;
 
         public Builder setStaffId(String staffId){
@@ -62,9 +64,9 @@ public class Employee {
 
         public Builder copy(Employee employee){
 
-            this.staffId=staffId;
-            this.email=email;
-            this.name=name;
+            this.staffId=employee.staffId;
+            this.email=employee.email;
+            this.name=employee.name;
 
             return this;
         }
