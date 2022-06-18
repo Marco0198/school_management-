@@ -12,6 +12,7 @@ import java.util.Optional;
  * EmployeeAddressRepository.java
  * Date : 13th June 2022
  */
-public interface EmployeeAddressRepository extends JpaRepository<EmployeeAddress, String> {
-    Optional<EmployeeAddress> findNameByStaffId (String staffId);
-}
+
+//public interface EmployeeAddressRepository extends JpaRepository<EmployeeAddress, String> {
+//    Optional<EmployeeAddress> findNameByStaffId (String staffId);
+//}

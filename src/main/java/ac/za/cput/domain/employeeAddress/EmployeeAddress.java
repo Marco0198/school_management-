@@ -2,9 +2,8 @@ package ac.za.cput.domain.employeeAddress;
 
 import ac.za.cput.domain.address.Address;
 import com.sun.istack.NotNull;
-import javax.persistence.Embeddable;
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
+
+import javax.persistence.*;
 import java.io.Serializable;
 /*
  * Student Name: Damian du Toit
@@ -12,10 +11,11 @@ import java.io.Serializable;
  * EmployeeAddress.java
  * Date : 13th June 2022
  */
-@Entity
+
 @Embeddable
 public class EmployeeAddress implements Serializable {
     @NotNull
+    @EmbeddedId
     public String staffId;
     @Embedded
     @NotNull
