@@ -9,19 +9,22 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.Optional;
 import java.util.Set;
 /*
- Author: Marco Mulondayi Tshimanga (219049505)
- Date:  2022
-*/
+StudentServiceImplTest.java
+Test case for Student Service Implementation
+@author: Anicka Schouw 217284183
+June 2022
+ */
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class StudentServiceImplTest {
     @Autowired public StudentServiceImpl service;
     public Name name;
     public Student student1;
+
     @BeforeEach
     void setUp() {
-        this.name= new Name("marco","mulonday","tshimanga");
-        this.student1= StudentFactory.createStudent("44","thh@gmail.com",this.name);
+        this.name= new Name("Anicka","Maggie","Schouw");
+        this.student1= StudentFactory.createStudent("010","aMs@gmail.com",this.name);
     }
 
     @Test
