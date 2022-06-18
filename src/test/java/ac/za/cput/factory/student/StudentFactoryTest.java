@@ -1,11 +1,12 @@
 package ac.za.cput.factory.student;
-
 import ac.za.cput.domain.name.Name;
 import ac.za.cput.domain.student.Student;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
-
+/*
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date:  2022
+*/
 class StudentFactoryTest {
 
     @Test

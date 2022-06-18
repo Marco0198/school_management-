@@ -1,16 +1,16 @@
 package ac.za.cput.service.student.impl;
-
 import ac.za.cput.domain.student.Student;
 import ac.za.cput.repository.student.StudentRepository;
 import ac.za.cput.service.student.StudentService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
-
+/*
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date:  2022
+*/
 @Service
  public class StudentServiceImpl implements StudentService {
  private final StudentRepository repository;
@@ -26,10 +26,7 @@ import java.util.stream.Collectors;
  public Optional<Student> read(String studentId) {
      return this.repository.findById(studentId);
  }
- @Override
- public Student update(Student student) {
-     return save(student);
- }
+
  @Override
  public void delete(Student s) {repository.delete(s);}
     @Override
