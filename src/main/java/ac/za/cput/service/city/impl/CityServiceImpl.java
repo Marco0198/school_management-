@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
  * Student Number: 219200203
  * CityServiceImpl.java
  * Date : 13th June 2022
+
  */
 @Service
 public class CityServiceImpl implements ICityService {
@@ -29,10 +30,7 @@ public class CityServiceImpl implements ICityService {
     public Optional<City> read(String id) {
         return this.repository.findById(id);
     }
-    @Override
-    public City update(City city) {
-        return save(city);
-    }
+
     @Override
     public void delete(City c) {
         repository.delete(c);
