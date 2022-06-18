@@ -4,15 +4,25 @@ import ac.za.cput.domain.student.Student;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 /*
- Author: Marco Mulondayi Tshimanga (219049505)
- Date:  2022
+StudentFactoryTest.java
+The test case for Student Factory
+@author: Anicka Schouw 217284183
+June 2022
 */
 class StudentFactoryTest {
 
     @Test
     void createStudent() {
-        Name name= new Name("marco","mulonday","tshimanga");
-        Student student = StudentFactory.createStudent("888","788",name);
+        Name name= new Name("Anicka","Maggie","Schouw");
+        Student student = StudentFactory.createStudent("010","685",name);
+        System.out.println(student.toString());
+        assertNotNull(student);
+    }
+
+    @Test
+    void createStudentWithError() {
+        Name name= new Name("","Maggie","Schouw");
+        Student student = StudentFactory.createStudent("010","685",name);
         System.out.println(student.toString());
         assertNotNull(student);
     }

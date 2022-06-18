@@ -6,8 +6,10 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 /*
- Author: Marco Mulondayi Tshimanga (219049505)
- Date:  2022
+Student.java
+Domain class for Student
+@author: Anicka Schouw 217284183
+June 2022
 */
 
 @Entity
