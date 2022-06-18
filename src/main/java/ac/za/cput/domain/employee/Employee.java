@@ -2,9 +2,12 @@ package ac.za.cput.domain.employee;
 import ac.za.cput.domain.name.Name;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-/* Customer.java
- Entity for the Customer
+import javax.validation.constraints.Pattern;
+
+/*
  Author: Marco Mulondayi Tshimanga (219049505)
  Date:  2022
 */
@@ -16,6 +19,8 @@ public class Employee {
     @Column(name="staff_id")
     private String staffId;
     @Column(name="email")
+    @Email(regexp = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}", flags = Pattern.Flag.CASE_INSENSITIVE)
+    @NotEmpty(message = "Email cannot be empty")
     @NotNull private String  email;
     @Embedded
     private Name name;
