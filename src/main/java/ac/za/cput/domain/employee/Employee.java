@@ -1,14 +1,14 @@
 package ac.za.cput.domain.employee;
-
-
 import ac.za.cput.domain.name.Name;
-
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Id;
-
 import javax.validation.constraints.NotNull;
-
+/* Customer.java
+ Entity for the Customer
+ Author: Marco Mulondayi Tshimanga (219049505)
+ Date:  2022
+*/
 public class Employee {
     @Id
     @NotNull
@@ -40,9 +40,7 @@ public class Employee {
 
     public static class Builder{
         @Id
-        @Column(name="student_id")
         private String staffId;
-        @Column(name="email")
         @Embedded
         private Name name;
 
