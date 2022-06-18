@@ -5,6 +5,7 @@ Test case for Name Service Implementation
 @author: Anicka Schouw 217284183
 June 2022
  */
+/*
 import ac.za.cput.domain.name.Name;
 import ac.za.cput.factory.name.NameFactory;
 import ac.za.cput.service.name.NameService;
@@ -54,3 +55,5 @@ class NameServiceImplTest {
         assertEquals(0,service.readAll().size());
     }
 }
+
+ */
