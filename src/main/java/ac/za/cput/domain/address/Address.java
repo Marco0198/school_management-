@@ -18,7 +18,7 @@ public class Address  {
     private String complexName, streetNumber, streetName;
     private int postalCode;
 
-    protected Address() {}
+    public Address() {}
 
     @Embedded
     public City city;

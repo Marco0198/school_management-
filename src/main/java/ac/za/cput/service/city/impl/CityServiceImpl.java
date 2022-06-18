@@ -39,6 +39,9 @@ public class CityServiceImpl implements ICityService {
     public Optional <City> findNameById(String id) {
         return repository.findNameById(id);
     }
+    public Optional <City> listAllCities(String countryId) {
+        return repository.findNameById(countryId);
+    }
 
     @Override
     public Set<City> findAll() {
