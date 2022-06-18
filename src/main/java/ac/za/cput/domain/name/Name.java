@@ -7,15 +7,14 @@ June 2022
  */
 import com.sun.istack.NotNull;
 import javax.persistence.Embeddable;
-import javax.persistence.Entity;
 import java.io.Serializable;
 
-@Entity
 @Embeddable
 public class Name implements Serializable {
    @NotNull public String  firstName;
     public String middleName;
     @NotNull public String lastName;
+
     protected Name(){}
 
 
