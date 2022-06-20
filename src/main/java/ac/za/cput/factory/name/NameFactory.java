@@ -5,7 +5,7 @@ Factory for domain Name
 @author: Anicka Schouw 217284183
 June 2022
  */
-/*
+
 import ac.za.cput.domain.name.Name;
 import ac.za.cput.helper.StringHelper;
 
@@ -25,4 +25,3 @@ public class NameFactory {
     }
 }
 
- */

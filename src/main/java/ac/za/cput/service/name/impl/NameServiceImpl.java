@@ -5,7 +5,7 @@ Implementation for NameService interface
 @author: Anicka Schouw 217284183
 June 2022
  */
-/*
+
 import ac.za.cput.domain.name.Name;
 import ac.za.cput.repository.name.NameRepository;
 import ac.za.cput.repository.student.StudentRepository;
@@ -52,4 +52,4 @@ public class NameServiceImpl implements NameService {
         this.repository.delete(name);
     }
 
-}*/
+}
